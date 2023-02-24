@@ -6,13 +6,16 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "predeploy": "nuxt generate",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "@fortawesome/fontawesome": "^1.1.8",
     "@nuxtjs/fontawesome": "^1.1.2",
     "@nuxtjs/tailwindcss": "^6.4.1",
     "eslint": "^8.34.0",
+    "github-pages": "^3.0.2",
     "nuxt": "^3.2.2",
     "sass": "^1.58.3"
   },

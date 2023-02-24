@@ -1,9 +1,20 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-export default defineNuxtConfig({
+export default {
+  mode: 'static',
+  router: {
+    base: '/lxsavage.github.io/',
+  },
   telemetry: false,
-  modules: ['@nuxtjs/tailwindcss'],
-  plugins: [
-    { src: '~/plugins/font-awesome' }
+  modules: [
+      '@nuxtjs/tailwindcss',
   ],
-  css: ['@fortawesome/fontawesome-svg-core/styles.css']
-})
+  buildModules: [
+    '@nuxtjs/fontawesome'
+  ],
+  fontawesome: {
+    icons: {
+      solid: ['faLocationDot', 'faEnvelope'],
+      brands: ['faGithub', 'faLinkedinIn']
+    }
+  }
+}

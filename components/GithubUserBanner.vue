@@ -15,7 +15,7 @@
           </h1>
           <p class="mb-2">{{ state.githubUser.bio }}</p>
           <p>
-            <font-awesome-icon icon="fa-solid fa-location-dot" class="mr-1" />
+            <FontAwesomeIcon :icon="faLocationDot" class="mr-1" />
             {{ state.githubUser.location }}
           </p>
         </div>
@@ -26,6 +26,7 @@
 
 <script lang="ts" setup>
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 
 interface IGithubUserBannerProps {
   username: string
