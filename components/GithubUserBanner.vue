@@ -25,7 +25,6 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 
 interface IGithubUserBannerProps {
-  username: string,
   user: IGithubUser,
 }
 

@@ -9,6 +9,7 @@ export default {
   telemetry: false,
   buildModules: [
     '@nuxtjs/fontawesome',
+    '@nuxtjs/tailwindcss'
   ],
   fontawesome: {
     icons: {
@@ -19,7 +20,4 @@ export default {
   css: [
     '@/assets/css/tailwind.css'
   ],
-  modules: [
-      '@nuxtjs/tailwindcss'
-  ]
 }
