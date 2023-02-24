@@ -7,8 +7,7 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "predeploy": "nuxt generate",
-    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
+    "predeploy": "nuxt generate"
   },
   "devDependencies": {
     "@fortawesome/fontawesome": "^1.1.8",
@@ -16,10 +15,8 @@
     "@nuxtjs/tailwindcss": "^6.4.1",
     "autoprefixer": "^10.4.13",
     "eslint": "^8.34.0",
-    "github-pages": "^3.0.2",
     "nuxt": "^3.2.2",
     "postcss": "^8.4.21",
-    "push-dir": "^0.4.1",
     "sass": "^1.58.3"
   },
   "dependencies": {
