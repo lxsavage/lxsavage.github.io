@@ -1,30 +1,47 @@
 <template>
-  <div class="md:container mx-auto md:max-w-md rounded-lg md:shadow p-5 mt-5 mb-5">
+  <div class="md:container mx-auto md:max-w-xl p-5">
     <section v-if="state.isLoading">
-      <p class="text-center">Loading GitHub information for {{ props.username }}...</p>
+      <p class="text-center">...</p>
     </section>
-    <div v-else class="gap-4 columns-2">
-      <img class="h-32 w-auto rounded-full" :src="state.githubUser.avatar_url" :alt="`Profile photo of ${state.githubUser.name}`" />
-      <div>
-        <h1 class="text-2xl">
-          <a :href="state.githubUser.html_url" style="text-decoration: none; color: black">
-            {{ state.githubUser.name }}
-          </a>
-        </h1>
-        <p>{{ state.githubUser.bio }}</p>
+
+    <a v-else :href="state.githubUser.html_url">
+      <div class="md:gap-4 md:columns-2 md:flex">
+        <img class="h-32 w-32 rounded-full mx-auto md:mr-0"
+             :src="state.githubUser.avatar_url"
+             :alt="`Profile photo of ${state.githubUser.name}`" />
+        <div class="text-center pt-2 md:pt-0 md:text-left md:my-auto">
+          <h1 class="text-2xl font-mono">
+              {{ state.githubUser.name }}
+          </h1>
+          <p class="mb-2">{{ state.githubUser.bio }}</p>
+          <p>
+            <font-awesome-icon icon="fa-solid fa-location-dot" class="mr-1" />
+            {{ state.githubUser.location }}
+          </p>
+        </div>
       </div>
-    </div>
+    </a>
   </div>
 </template>
 
 <script lang="ts" setup>
-const props = defineProps({
-  username: String,
-})
-const state = reactive({
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+
+interface IGithubUserBannerProps {
+  username: string
+}
+
+interface IGithubUserBannerState {
+  isLoading: boolean,
+  githubUser: object,
+}
+
+const props = defineProps<IGithubUserBannerProps>();
+
+const state: IGithubUserBannerState = reactive({
   isLoading: true,
   githubUser: {},
-})
+});
 
 fetch(`https://api.github.com/users/${encodeURIComponent(props.username as string)}`)
     .then(async result => {
@@ -32,7 +49,7 @@ fetch(`https://api.github.com/users/${encodeURIComponent(props.username as strin
       state.isLoading = false
     })
     .catch(err => {
-      console.log('Failed to fetch res due to error')
-    })
+      console.log(`Failed to fetch Github profile due to error ${err}`)
+    });
 
 </script>

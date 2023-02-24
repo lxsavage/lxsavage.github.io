@@ -1,0 +1,4 @@
+// TODO: Complete
+interface IGithubUserApiResponse {
+  //
+}
