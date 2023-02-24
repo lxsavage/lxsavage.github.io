@@ -1,7 +1,6 @@
 <template>
   <div class="container mx-auto md:shadow-2xl md:max-w-2xl bg-neutral-50 p-5 md:mt-5 rounded-xl">
     <header>
-      <p>hi</p>
       <GithubUserBanner :user="user" />
       <Navbar :items="items" />
     </header>
@@ -21,6 +20,7 @@ const user = {
   location: 'Columbus, OH, USA',
   profileURL: 'https://github.com/lxsavage'
 }
+
 const items = [
   {
     name: 'Home',
