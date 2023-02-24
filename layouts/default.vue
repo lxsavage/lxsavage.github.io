@@ -30,9 +30,5 @@ const items = [
     name: 'Projects',
     url: '/projects'
   },
-  {
-    name: 'Resume',
-    url: '/resume'
-  }
 ]
 </script>
