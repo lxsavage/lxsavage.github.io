@@ -1,8 +1,14 @@
 <template>
-  <div class="container mx-auto md:shadow-2xl bg-neutral-50 p-5 md:mt-5 rounded-xl">
-    <GithubUserBanner username="lxsavage"/>
-    <Navbar :items="items"></Navbar>
+  <div class="container mx-auto md:shadow-2xl md:max-w-2xl bg-neutral-50 p-5 md:mt-5 rounded-xl">
+    <header>
+      <GithubUserBanner username="lxsavage"/>
+      <Navbar :items="items" />
+    </header>
     <slot />
+    <hr class="mt-5" />
+    <footer>
+      <ContactButtons />
+    </footer>
   </div>
 </template>
 
@@ -18,7 +24,7 @@ const items = [
   },
   {
     name: 'Resume',
-    url: '/'
+    url: '/resume'
   }
 ]
 </script>
