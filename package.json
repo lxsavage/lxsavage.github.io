@@ -7,7 +7,7 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "deploy": "push-dir --dir=.output --branch=gh-pages --cleanup"
+    "deploy": "push-dir --dir=.output/public --branch=gh-pages --cleanup"
   },
   "devDependencies": {
     "@fortawesome/fontawesome": "^1.1.8",
