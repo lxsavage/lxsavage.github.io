@@ -1,20 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default {
-  mode: 'static',
-  build: {
-    postcss: {
-      postcssOptions: {
-        plugins: {
-          tailwindcss: {},
-          autoprefixer: {},
-        },
-      },
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
     },
   },
   telemetry: false,
-  modules: [
-    '@nuxtjs/tailwindcss',
-  ],
   buildModules: [
     '@nuxtjs/fontawesome',
   ],
@@ -25,6 +17,9 @@ export default {
     }
   },
   css: [
-    '@/assets/css/main.css',
+    '@/assets/css/tailwind.css'
   ],
+  modules: [
+      '@nuxtjs/tailwindcss'
+  ]
 }
