@@ -5,7 +5,7 @@
     <p v-if="state.isLoading">...</p>
     <div v-else class="container m-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
       <TileCard v-for="repo in state.projects"
-                :name="repo.full_name"
+                :name="repo.name"
                 :url="repo.html_url"
                 :lang="repo.language"
                 :description="repo.description" />

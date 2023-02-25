@@ -10,12 +10,29 @@
       for all projects implemented yet. Feel free to reach out if you want to see the code of these projects.
     </p>
     <hr class="mt-2 mb-2"/>
-    <h2 class="text-lg">Event Reviewer</h2>
+    <h2 class="text-lg">
+      Interpreter: Core
+      <span class="text-gray-500 float-right">In Progress</span>
+    </h2>
+    <h3 class="text-md">Language: Python</h3>
+    <h3 class="text-md mb-2">Class: CSE 3341 – Principles of Programming Languages</h3>
+    <p>
+      An interpreter for a fictional programming language named Core. Currently, the project has the tokenizer
+      implemented, with the parser, printer, and executor still in progress.
+    </p>
+    <hr class="mt-2 mb-2"/>
+    <h2 class="text-lg">
+      Event Reviewer
+      <span class="float-right">Autumn 2022</span>
+    </h2>
     <h3 class="text-md">Language: Ruby on Rails</h3>
     <h3 class="text-md mb-2">Class: CSE 3901 – Project: Web Applications</h3>
     <p>An event date aggregator with user feedback and comment functionality.</p>
     <hr class="mt-2 mb-2"/>
-    <h2 class="text-lg">What's Happening in the Next 2 Weeks?</h2>
+    <h2 class="text-lg">
+      What's Happening in the Next 2 Weeks?
+      <span class="float-right">Autumn 2022</span>
+    </h2>
     <h3 class="text-md">Language: Ruby on Rails</h3>
     <h3 class="text-md mb-2">Class: CSE 3901 – Project: Web Applications</h3>
     <p>
@@ -23,14 +40,20 @@
       will occur/begin within the next 2 weeks. The amount of days to look ahead can be customized.
     </p>
     <hr class="mt-2 mb-2"/>
-    <h2 class="text-lg">Set</h2>
+    <h2 class="text-lg">
+      The Game of Set
+      <span class="float-right">Autumn 2022</span>
+    </h2>
     <h3 class="text-md">Language: JavaScript</h3>
     <h3 class="text-md mb-2">Class: CSE 3901 – Project: Web Applications</h3>
     <p>
       The game of set, implemented using pure JavaScript/HTML/CSS without any external libraries.
     </p>
     <hr class="mt-2 mb-2"/>
-    <h2 class="text-lg">What's Happening in the Next 2 Weeks?</h2>
+    <h2 class="text-lg">
+      What's Happening in the Next 2 Weeks?
+      <span class="float-right">Autumn 2022</span>
+    </h2>
     <h3 class="text-md">Language: Ruby on Rails</h3>
     <h3 class="text-md mb-2">Class: CSE 3901 – Project: Web Applications</h3>
     <p>
