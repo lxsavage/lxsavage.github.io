@@ -4,13 +4,11 @@
 
     <p v-if="state.isLoading">...</p>
     <div v-else class="container m-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-      <template v-for="repo in state.projects">
-        <a :href="repo.html_url" class="tile inline-block p-2 rounded-xl shadow hover:shadow-xl">
-          <h3 class="text-lg">{{ repo.full_name }}</h3>
-          <h4 class="text-sm mb-2">Language: {{ repo.language }}</h4>
-          <p class="text-sm">{{ repo.description }}</p>
-        </a>
-      </template>
+      <TileCard v-for="repo in state.projects"
+                :name="repo.full_name"
+                :url="repo.html_url"
+                :lang="repo.language"
+                :description="repo.description" />
     </div>
   </div>
 </template>
