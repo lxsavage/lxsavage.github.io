@@ -14,14 +14,15 @@
     <p class="indent-8 mb-5">
       Outside of my coursework and internship work, I am also the vice president of the Waffle House Club at The Ohio
       State University, a position that I've held since 2022. In addition to this, I would describe myself as an avid
-      guitar player, with several years of continuous practice.
+      guitar player, with several years of practice.
     </p>
     <p class="text-center mb-5">
       You can check out my projects <NuxtLink to="/projects" class="text-blue-600 underline">here</NuxtLink>.
     </p>
-    <p class="text-sm text-center">I have had
-      an increase in spam coming in through my contact info included on my resume, so I have not publicly posted it
-      here. If you want to see my resume, feel free to reach out by email through the button below, and I will be glad
-      to reach out.</p>
+    <p class="text-sm text-center">
+      I have had an increase in spam coming in through my contact info included on my resume, so I have not publicly
+      posted it here. If you want to see my resume or have any questions about any of my projects, feel free to reach
+      out through any of my socials below, and I will be glad to help.
+    </p>
   </section>
 </template>
