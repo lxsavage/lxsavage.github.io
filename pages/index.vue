@@ -11,6 +11,11 @@
       over the summer in the years following, allowing for me to gain many valuable skills, both in programming and
       outside of it.
     </p>
+    <p class="indent-8 mb-2">
+      Currently, I am seeking internship opportunities to further broaden my horizons and find a way to bridge the gap
+      between my studies and the working world. Through an internship, I desire to see how far my current knowledge will
+      bring me, and how much I still need to learn through proving my skills while also learning more about the industry.
+    </p>
     <p class="indent-8 mb-5">
       Outside of my coursework and internship work, I am also the vice president of the Waffle House Club at The Ohio
       State University, a position that I've held since 2022. In addition to this, I would describe myself as an avid
