@@ -1,7 +1,5 @@
 <template>
   <div>
-    <h2 class="text-xl">GitHub</h2>
-
     <p v-if="state.isLoading">...</p>
     <div v-else class="container m-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
       <TileCard v-for="repo in state.projects"

@@ -1,8 +1,6 @@
 <template>
   <section>
-    <h1 class="text-2xl mb-2">Projects</h1>
-    <hr class="border-2 mt-5 mb-2"/>
-    <h2 class="text-xl mb-2" id="academic-projects">Academic Projects</h2>
+    <h1 class="text-xl mb-2" id="academic-projects">Academic Projects</h1>
     <p class="text-sm text-gray-500 mb-2">
       Note: to avoid potential academic misconduct by sharing the code for these project publicly, I do not have them
       linked here. Feel free to reach out if you want to see the code of, or more details about, any of these projects.
@@ -15,11 +13,9 @@
         This project involves implementing an interpreter for a fictional programming language named Core. Currently,
         the project has the tokenizer implemented, with the parser, printer, and executor still in progress.
       </template>
-      <template #challenges></template>
     </ProjectSummary>
     <hr class="mt-2 mb-2"/>
     <ProjectSummary name="Event Reviewer"
-                    description=""
                     language="Ruby on Rails"
                     class="CSE 3901 – Project: Web Applications"
                     date="Autumn 2022"
@@ -31,7 +27,6 @@
         implementing the authentication, which in addition to a typical authentication-for-access scenario, needed a
         separate instructor/student mode that would be set on a per-user basis.
       </template>
-      <template #challenges></template>
     </ProjectSummary>
     <hr class="mt-2 mb-2"/>
     <ProjectSummary name="The Game of Set"
@@ -44,7 +39,6 @@
         project, I was responsible for implementing the game state and comparison logic in the game engine underneath
         the UI.
       </template>
-      <template #challenges></template>
     </ProjectSummary>
     <hr class="mt-2 mb-2"/>
     <ProjectSummary name="What's Happening in the Next 2 Weeks?"
@@ -59,9 +53,8 @@
         parsed for determining whether it would be within the next 2 weeks, or the time period specified by the user.
       </template>
     </ProjectSummary>
-    <hr class="mt-2 mb-2 border-2"/>
   </section>
-  <GithubProjectGrid username="lxsavage"/>
 </template>
 <script setup lang="ts">
-import ProjectSummary from "~/components/ProjectSummary.vue";</script>
+import ProjectSummary from "~/components/ProjectSummary.vue";
+</script>

@@ -14,7 +14,7 @@ export default {
   ],
   fontawesome: {
     icons: {
-      solid: ['faLocationDot', 'faEnvelope'],
+      solid: ['faLocationDot', 'faEnvelope', 'faChevronUp', 'faChevronDown'],
       brands: ['faGithub', 'faLinkedinIn']
     }
   },

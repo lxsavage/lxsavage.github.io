@@ -27,8 +27,12 @@ const items = [
     url: '/'
   },
   {
-    name: 'Projects',
-    url: '/projects'
+    name: 'Academic Projects',
+    url: '/academic-projects'
   },
+  {
+    name: 'Github Projects',
+    url: '/github-projects'
+  }
 ]
 </script>

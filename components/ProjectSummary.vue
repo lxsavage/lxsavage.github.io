@@ -16,10 +16,6 @@
     <h3 class="text-lg">Description</h3>
     <slot name="description" />
   </section>
-  <section v-if="slots.content">
-    <h3 class="text-lg">Challenges</h3>
-    <slot name="challenges" />
-  </section>
   <img v-if="props.img" :src="props.img"
        class="border-solid border-2 border-slate-300 md:rounded-lg md:shadow mt-2 mb-2"
        :alt="props.name + ' screenshot'" />
